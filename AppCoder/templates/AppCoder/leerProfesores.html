@@ -1,0 +1,19 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% block contenidoQueCambia %}
+Aquí va la lista de profesores!
+
+
+{% if profesores %}
+<ul>
+    {% for profesor in profesores %}
+    <li>{{ profesor.nombre }} ({{ profesor.email }})</li>
+    {% endfor %}
+</ul>
+{% else %}
+<h1>No existen profesores en la base de datos</h1>
+{% endif %}
+
+
+{% endblock %}
