@@ -10,7 +10,9 @@
     {% for post in posts %}
         <div style="margin-bottom: 20px;">
             <img src="{{ post.imagen.url }}" style="max-width: 100%; height: auto; border-radius: 10px; display: block; margin: auto;"/>
-            <p style="color: #333; background-color: #eaf2ff; padding: 10px; border-radius: 5px; margin-top: 10px; text-align: left;">{{ post.epigrafe }}</p>
+            <figcaption style="color: #333; background-color: #eaf2ff; padding: 10px; border-radius: 5px; margin-top: 10px; text-align: center; font-style: italic;">
+                {{ post.epigrafe }}
+            </figcaption>
         </div>
     {% endfor %}
     </div>
